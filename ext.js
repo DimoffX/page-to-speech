@@ -77,7 +77,7 @@ var pageToSpeech = {
     onkeydown = onkeyup = function(evt) {
       var e = evt || event;
       activeKeys[e.keyCode] = e.type == 'keydown';
-      if (activeKeys[16] && activeKeys[84]) {
+      if (activeKeys[16] && activeKeys[89]) {
         pageToSpeech.initialize();
       }
     };
@@ -88,7 +88,7 @@ var pageToSpeech = {
 
 chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
 
-  if (msg.action == 'speakHighlight') {
+  if (msg.action == 'pageToSpeech') {
     pageToSpeech.initialize();
 
   }

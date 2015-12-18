@@ -5,7 +5,7 @@
   "name": "Page to Speech",
   "description": "This extension will produce English speech to whatever text you highlight on a webpage.Highlight text and click the extension's icon",
   "author": "Ivan Dimov",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "background": {
     "scripts": ["background.min.js"]
   },
