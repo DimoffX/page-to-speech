@@ -62,7 +62,7 @@ var pageToSpeech = {
       this.data.fallbackAudio.pause();
     }
     this.data.speechInProgress = true;
-    this.data.fallbackAudio = new Audio("http://api.voicerss.org/?key=91ccdebdc35d4833945e566f4577f43e&src=" + this.data.highlightedText);
+    this.data.fallbackAudio = new Audio("http://api.voicerss.org/?key=your_api_key&src=" + this.data.highlightedText);
     this.data.fallbackAudio.addEventListener("error", function(evt) {
       alert("Sorry, we cannot produce speech right now. Try upgrading your Chrome browser!");
     })
